@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <Button
+        android:id="@+id/addtask"
+        android:layout_width="168dp"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="122dp"
+        android:layout_marginBottom="1dp"
+        android:text="Add tasks"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="409dp"
+        android:layout_height="418dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-13dp"
+        app:srcCompat="@drawable/r1" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="To Do List"
+        android:textColor="#FBF6F6"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="201dp"
+        android:layout_marginBottom="487dp"
+        android:text="Todays Tasks "
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/ib"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="663dp"
+        app:srcCompat="@drawable/img_1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="533dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="210dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:text="View All your tasks"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/img3"
+                    android:layout_width="197dp"
+                    android:layout_height="68dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="210dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="Check Overdue Tasks"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/img1"
+                    android:layout_width="189dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_4" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="210dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="View Completed tasks"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/img2"
+                    android:layout_width="189dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/img_3" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-11dp"
+        android:layout_marginBottom="516dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="146dp"
+        android:layout_marginBottom="579dp"
+        android:text=".   .   ."
+        android:textSize="34sp" />
+
+</RelativeLayout>
